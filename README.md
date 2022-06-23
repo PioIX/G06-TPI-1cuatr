@@ -29,7 +29,53 @@ Tiempo: 00:05:00 minutos
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+![image](https://ecdn.teacherspayteachers.com/thumbitem/Wordle-Template--7717968-1643992886/original-7717968-1.jpg)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+*Interfaz del juego*
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+![image](https://img.blogs.es/anexom/wp-content/uploads/2022/01/Wordle-que-es.jpg)
+
+Tiempo: 00:03:00 minutos restantes
+
+Cantidad de intentos: 6
+
+Felicidades, adivinaste la palabra.
+
+### Manuel, ¿SabIas Que...?
+
+La palabra *x* estA relacionada con el ODS Nº X, *Nombre del ODS*, ... (ExplicaciOn de la relaciOn de la palabra con el ODS). 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+*Fin de Partida - Tiempo restante, cantidad de intentos utilizados y explicaciOn de la palabra*
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+### Funcionalidad
+
+
+
+### Tareas
+
+
+
+### Responsabilidades
+
+
+
+### Primera Entrega (30/6)
+
+
+
+### Segunda Entrega (7/7)
+
+
+
+### Tercera Entrega (14/7)
 
 
 

@@ -37,7 +37,7 @@ Tiempo: 00:05:00 minutos
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-![image](https://img.blogs.es/anexom/wp-content/uploads/2022/01/Wordle-que-es.jpg)
+![image](wordleCompletado.jpg)
 
 Tiempo: 00:03:00 minutos restantes
 

@@ -1,5 +1,6 @@
 # G06-TPI-1cuatr
 ### Integrantes: Agustina Fornés, Chiara Mennuti, Javier Santa Cruz y Salvador Tartaglia
+### Presupuesto:
 
 Nosotros vamos a desarrollar una aplicación web que contenga una imitación del famoso juego "Wordle" que permita profundizar, divulgar y familiarizar los ODS de la Agenda 2030 a nivel generaL y el ODS Nº13 AcciOn por el Clima de manera particular.  
 

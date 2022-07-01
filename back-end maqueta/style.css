@@ -1,0 +1,87 @@
+h1 {
+  text-align: center;
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.filled-box {
+  border: 2px solid black;
+}
+
+.letter-row {
+  display: flex;
+}
+
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.tile-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile-container .tile {
+  width: 62px;
+  height: 62px;
+  border: solid rgb(0, 0, 0) 2px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 2px;
+}
+
+.tile.flip{
+  animation: 0.5s linear flipping;
+}
+  @keyframes flipping{
+    0%{
+      transform: rotateX(0deg);
+    }
+    50%{
+      transform: rotateX(90deg);
+    }
+    100%{
+      transform: rotateX(0deg);
+    }
+}

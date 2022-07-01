@@ -1,4 +1,4 @@
-**Ricos**: ¿Sabías que el 71% de las emisiones en el mundo las producen tan solo 100 empresas adineradas? Entendemos que los culpables de nuestra alarmante realidad son aquellxs tomadorxs de decisiones que conscientemente se llenan los bolsillos de dinero contaminado y ensangrentado a costa de las clases populares.
+**Ricos**: ¿Sabías que el 71% de las emisiones en el mundo las producen tan solo 100 empresas adineradas? Entendemos que los culpables de nuestra alarmante realidad son aquellos tomadores de decisiones que conscientemente se llenan los bolsillos de dinero contaminado y ensangrentado a costa de las clases populares.
 
 **Minar**: Hoy mismo hay poblaciones enteras siendo azotadas por sequías, inundaciones, e incontables enfermedades causadas por los químicos utilizados para la megaminería y la ganadería.
 

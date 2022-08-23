@@ -5,10 +5,10 @@
 
 ### Índice:
 
-- <a href="Presupuesto.md"> Presupuesto </a>
-- <a href="UI.md"> Diseño de Imágen y UI </a> 
-- Maquetación HTML (<a href="index.html">HTML</a>, <a href="style.css">CSS</a>)
-- Maquetación HTML Reglas (<a href="reglas.html">HTML</a>, <a href="reglas.css">CSS</a>)
-- <a href="Lista de palabras.md"> Lista de Palabras</a> 
+- <a href="Documentos/Presupuesto.md"> Presupuesto </a>
+- <a href="Documentos/UI.md"> Diseño de Imágen y UI </a> 
+- Maquetación HTML (<a href="templates html web/index.html">HTML</a>, <a href="templates html web/style.css">CSS</a>)
+- Maquetación HTML Reglas (<a href="templates html web/reglas.html">HTML</a>, <a href="templates html web/reglas.css">CSS</a>)
+- <a href="Documentos/Lista de palabras.md"> Lista de Palabras</a> 
 - <a href="BaseDeDatos/Wordle_BD.db"> Base de Datos</a> 
 

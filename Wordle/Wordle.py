@@ -1,101 +1,56 @@
+from flask import Flask, render_template, request, jsonify
+import sqlite3
 import random
-import time
 
-f = open(r"C:\Users\alumno\Desktop\palabras.txt", "r")
-listaPalabras = f.readlines()
-f.close()
+app = Flask(__name__)
+app.secret_key = 'asfasdfahsdgajsd'
 
-lista = []
-for s in listaPalabras:
-    lista.append(s[:-1])    
-
-palabra = []
-eleccion = 0
-while eleccion == 0:
-    dificultad = input("Elija un nivel de dificultad(1, 2 o 3): ")
-    if int(dificultad) == 1:
-        palabra = random.choice(lista)
-        intentos = 10000
-        while len(palabra) != 4:
-            palabra = random.choice(lista)
-    elif int(dificultad) == 2:
-        palabra = random.choice(lista)
-        intentos = 7
-        while len(palabra) != 5:
-            palabra = random.choice(lista)
-    elif int(dificultad) == 3:
-        palabra = random.choice(lista)
-        intentos = 5
-        while len(palabra) != 6:
-            palabra = random.choice(lista)
-
-    
-
-    palabraIngresada = input("Ingrese una palabra: ")
-    start = time.perf_counter()
-    start = start/1000
-    print("tiempo inicio: ", start)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 
-    terminar = 0
-    while terminar == 0:
-        guiones = ""
-        i=0
-        while i < len(palabra):
-            if len(palabra) != len(palabraIngresada):
-                if int(dificultad) == 1:
-                    print("La palabra debe tener solo 4 caracteres. Vuelve a intentarlo.")
-                elif int(dificultad) == 2:
-                    print("La palabra debe tener solo 5 caracteres. Vuelve a intentarlo.")
-                elif int(dificultad) == 3:
-                    print("La palabra debe tener solo 6 caracteres. Vuelve a intentarlo.")
-                palabraIngresada = ""
-                palabraIngresada = input("Ingrese una palabra: ")
+@app.route('/reglas')
+def reglas():
+    return render_template('reglas.html')
 
-            if palabra[i] == palabraIngresada[i]:
-                guiones += "="
 
-            elif palabraIngresada[i] in palabra:
-                guiones += "-"
-                
-            else:
-                guiones += " "
-            i += 1
-        
-        print(palabraIngresada)
-        print(guiones) 
+@app.route('/cuadro', methods=['POST', 'GET'])
+def cuadro():
 
-        
-        if palabra != palabraIngresada:
-            intentos = intentos - 1
-            palabraIngresada = ""
-            palabraIngresada = input("Ingrese otra palabra: ")
+    if request.method == 'POST':
+      name = request.form['nombre']
+      conn = sqlite3.connect('Wordle_BD.db')
+      
+      q = f"""INSERT INTO Jugadores (nombre) 
+      VALUES ('{name}')"""
+  
+      conn.execute(q)
+      conn.commit()
+      
+      
+      return render_template('cuadro.html')
+    else:
+      return render_template('cuadro.html')
 
-        if intentos == 0:
-            terminar = 1
-            print("Te quedaste sin intentos! :( ")
-            rta = input("Queres volver a jugar? (si o no): ")
-            if rta == "si":
-                eleccion = 0
-            else:
-                print("Gracias por jugar!")
-                eleccion = 1
 
-        if palabraIngresada == palabra:
-            terminar = 1
-            print("Muy Bien! Adivinaste la palabra!")
-            end = time.perf_counter()
-            end = end/1000
-            print("tiempo fin: ", end)
-            print("transcurrió: ", end - start)
-            rta = input("Queres volver a jugar? (si o no): ")
-            if rta == "si":
-                eleccion = 0
-            else:
-                print("Gracias por jugar!")
-                eleccion = 1
+@app.route('/proyecto')
+def proyecto():
+    return render_template('proyecto.html')
 
-    
-        
-   
-        
+
+@app.route('/traerLista', methods=['POST', 'GET'])
+def traerLista():
+  i = random.randint(0, 19)
+  if request.method == "POST":
+    qtc_data = request.get_json()
+    print(qtc_data)
+    conn = sqlite3.connect('Wordle_BD.db')
+    q = f"""SELECT * FROM Palabras WHERE id_palabra = ('{i}')"""
+    respuesta = conn.execute(q)
+
+  results = {'lista': respuesta.fetchall()}
+  print(results)
+  return jsonify(results)
+
+app.run(host='0.0.0.0', port=81)

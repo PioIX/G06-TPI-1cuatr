@@ -162,7 +162,7 @@
 
 .Titulo h3 {
     display: flex;
-    font-size: 30px;
+    font-size: 40px;
     color: #77FF74;
     flex-direction: column;
     align-items: center;
@@ -188,92 +188,12 @@
     z-index: 1;
 }
 
-.Reglamento .reglas{
+.Descripcion{
     z-index: 1;
-    margin-left: 60px;
-    margin-top: 150px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10%;
     position: absolute;
     color: #fff;
-    font-size: 25px;    
-}
-
-.reglas li{
-    font-family: 'Open Sans', sans-serif;   
-}
-
-.Verde {
-    z-index: 1;
-    position: absolute;
-    margin-top: 20%;
-}
-
-.Verde p{
-    z-index: 1;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 110%;
-    color: #FFF;
-}
-
-.Amarillo {
-    z-index: 1;
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 9px;
-}
-
-.Amarillo p{
-    z-index: 1;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 110%;
-    color: #FFF;
-}
-
-.Gris {
-    z-index: 1;
-    position: absolute;
-    margin-top: 40%;
-
-}
-
-.Gris p{
-    z-index: 1;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 110%;
-    color: #FFF;
-}
-
-.imagenes .Verde{
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.imagenes .Amarillo{
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 55px;
-    left: 49.5%;
-    transform: translate(-50%, -50%);
-}
-
-.imagenes .Gris{
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 20px;    
 }

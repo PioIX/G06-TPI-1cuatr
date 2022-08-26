@@ -2,20 +2,20 @@
 
 **1. INICIO**
 
-![image](/img/1.png)
+![image](/img1.png)
 
 **2. REGLAS**
 
-![image](/img/2.png)
+![image](/img2.png)
 
 **3. JUEGO**
 
-![image](/img/3.png)
+![image](/img3.png)
 
 **5. SI GANA**
 
-![image](/img/4.png)
+![image](/img4.png)
 
 **6. SI PIERDE**
 
-![image](/img/5.png)
+![image](/img5.png)

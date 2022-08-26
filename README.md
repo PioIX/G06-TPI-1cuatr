@@ -1,7 +1,7 @@
 #  Trabajo integrador interdisciplinario Grupo N° 06
 ### Integrantes: Agustina Fornés, Chiara Mennuti, Javier Santa Cruz y Salvador Tartaglia
 
-## Link del PythonAnywhere: STartaglia.pythonanywhere.com
+## Link del PythonAnywhere: https://STartaglia.pythonanywhere.com
 
 ## Link del Repositorio de Replit: https://github.com/PioIX/Proyecto_Wordle_G06/tree/main
 
